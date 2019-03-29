@@ -63,7 +63,7 @@ functions, just like with any sort of preprocessor:
 ```js
 //?...
 simpleIncludeExample = function(file) {
-    write(indent(require("fs").readFileSync(file).toString("utf8")), __);
+    write(indent(require("fs").readFileSync(file).toString("utf8"), __));
 }
 //?.
 ```
@@ -72,7 +72,7 @@ or, as a block:
 
 ```js
 /*? simpleIncludeExample = function(file) {
-    write(indent(require("fs").readFileSync(file).toString("utf8")), __);
+    write(indent(require("fs").readFileSync(file).toString("utf8"), __));
 } */
 ```
 
